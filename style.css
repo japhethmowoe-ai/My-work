@@ -1,4 +1,4 @@
-
+/* Reset and base styles */
 * {
     margin: 0;
     padding: 0;
@@ -6,17 +6,17 @@
     font-family: "Segoe UI", Arial, sans-serif;
 }
 
-
 body {
     background: url("https://rare-gallery.com/uploads/posts/4552170-native-americans-men-warrior-native-american-clothing-nature-artwork-trees-animals-horse-feathers-arrows-bow-painting-rock-mountains-stream-sun-rays-birds.jpg")
-                no-repeat center center/cover;
+                no-repeat center center fixed;
+    background-size: cover;
     color: #fff;
     line-height: 1.6;
     min-height: 100vh;
     padding-bottom: 50px;
 }
 
-
+/* Header */
 header {
     text-align: center;
     padding: 50px 20px;
@@ -37,17 +37,16 @@ header p {
     color: #fdfdfd;
 }
 
-
+/* Sections */
 section {
     max-width: 900px;
     margin: 40px auto;
     padding: 30px;
     border-radius: 12px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.75); /* slightly darker for better contrast */
     color: #fff;
     box-shadow: 0 8px 20px rgba(0,0,0,0.5);
 }
-
 
 section h2 {
     color: #4CAF50;
@@ -56,13 +55,12 @@ section h2 {
     text-transform: uppercase;
 }
 
-
 section p {
     font-size: 17px;
     color: #f1f1f1;
 }
 
-
+/* Skills */
 .skills ul {
     display: flex;
     flex-wrap: wrap;
@@ -80,51 +78,7 @@ section p {
     transition: 0.25s;
 }
 
-.contact p {
-    font-size: 18px;
-    color: #fff;
-    text-align: flex-start;
-}
-
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 36px;
-    }
-    header p {
-        font-size: 16px;
-    }
-    section {
-        padding: 20px;
-    }
-    section h2 {
-        font-size: 24px;
-    }
-    section p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 480px) {
-    header h1 {
-        font-size: 28px;
-    }
-    header p {
-        font-size: 14px;
-    }
-    section {
-        padding: 15px;
-    }
-    section h2 {
-        font-size: 20px;
-    }
-    section p {
-        font-size: 15px;
-    }
-    .skills ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-}
+/* Contact */
 .contact-icons {
     display: flex;
     gap: 18px;
@@ -158,13 +112,48 @@ section p {
     fill: #ffffff;
 }
 
+/* Responsive: tablets */
 @media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    section {
+        padding: 20px;
+    }
+    section h2 {
+        font-size: 24px;
+    }
+    section p {
+        font-size: 16px;
+    }
     body {
-        background-size: contain;
-        background-repeat: no-repeat;
+        background-size: cover; /* keep full coverage */
         background-position: center top;
-        background-color: #000; /* so empty space blends in */
     }
 }
 
-
+/* Responsive: phones */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+    header p {
+        font-size: 14px;
+    }
+    section {
+        padding: 15px;
+    }
+    section h2 {
+        font-size: 20px;
+    }
+    section p {
+        font-size: 15px;
+    }
+    .skills ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
