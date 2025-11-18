@@ -1,0 +1,160 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+body {
+    background: url("https://rare-gallery.com/uploads/posts/4552170-native-americans-men-warrior-native-american-clothing-nature-artwork-trees-animals-horse-feathers-arrows-bow-painting-rock-mountains-stream-sun-rays-birds.jpg")
+                no-repeat center center/cover;
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgba(0,0,0,0.6);
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: #4CAF50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 800;
+}
+
+header p {
+    font-size: 18px;
+    color: #fdfdfd;
+}
+
+
+section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 12px;
+    background-color: rgba(0,0,0,0.7);
+    color: #fff;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+
+section h2 {
+    color: #4CAF50;
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+
+section p {
+    font-size: 17px;
+    color: #f1f1f1;
+}
+
+
+.skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 15px;
+    list-style: none;
+}
+
+.skills li {
+    color: #fff;
+    padding: 10px 5px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.25s;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #fff;
+    text-align: flex-start;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 36px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    section {
+        padding: 20px;
+    }
+    section h2 {
+        font-size: 24px;
+    }
+    section p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+    header p {
+        font-size: 14px;
+    }
+    section {
+        padding: 15px;
+    }
+    section h2 {
+        font-size: 20px;
+    }
+    section p {
+        font-size: 15px;
+    }
+    .skills ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+.contact-icons {
+    display: flex;
+    gap: 18px;
+    margin: 20px 0 25px 0;
+}
+
+.icon {
+    background-color: rgba(255,255,255,0.18);
+    padding: 12px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+    transition: 0.3s ease;
+}
+
+.icon:hover {
+    background-color: #4CAF50;
+    transform: translateY(-3px);
+}
+
+.icon:hover svg {
+    fill: #ffffff;
+}
+
