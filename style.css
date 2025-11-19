@@ -1,118 +1,56 @@
-/* Reset and base styles */
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
 body {
-    background: url("https://rare-gallery.com/uploads/posts/4552170-native-americans-men-warrior-native-american-clothing-nature-artwork-trees-animals-horse-feathers-arrows-bow-painting-rock-mountains-stream-sun-rays-birds.jpg")
-                no-repeat center center fixed;
-    background-size: cover;
+    font-family: Arial, sans-serif;
     color: #fff;
+    background: #000;
     line-height: 1.6;
-    min-height: 100vh;
-    padding-bottom: 50px;
 }
 
-/* Header */
-header {
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
     text-align: center;
-    padding: 50px 20px;
-    background-color: rgba(0,0,0,0.6);
 }
 
+/* Hero image scales naturally */
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Overlay text */
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 20px 30px;
+    border-radius: 12px;
+}
+
+/* Hero text styling */
 header h1 {
     font-size: 48px;
-    margin-bottom: 10px;
-    color: #4CAF50;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 800;
+    font-weight: bold;
 }
 
 header p {
     font-size: 18px;
-    color: #fdfdfd;
 }
 
-/* Sections */
-section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
-    border-radius: 12px;
-    background-color: rgba(0,0,0,0.75); /* slightly darker for better contrast */
-    color: #fff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
-}
-
-section h2 {
-    color: #4CAF50;
-    font-size: 28px;
-    margin-bottom: 15px;
-    text-transform: uppercase;
-}
-
-section p {
-    font-size: 17px;
-    color: #f1f1f1;
-}
-
-/* Skills */
-.skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 15px;
-    list-style: none;
-}
-
-.skills li {
-    color: #fff;
-    padding: 10px 5px;
-    border-radius: 6px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: 0.25s;
-}
-
-/* Contact */
-.contact-icons {
-    display: flex;
-    gap: 18px;
-    margin: 20px 0 25px 0;
-}
-
-.icon {
-    background-color: rgba(255,255,255,0.18);
-    padding: 12px;
-    border-radius: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s ease;
-    cursor: pointer;
-}
-
-.icon svg {
-    width: 30px;
-    height: 30px;
-    fill: #ffffff;
-    transition: 0.3s ease;
-}
-
-.icon:hover {
-    background-color: #4CAF50;
-    transform: translateY(-3px);
-}
-
-.icon:hover svg {
-    fill: #ffffff;
-}
-
-/* Responsive: tablets */
+/* Tablet */
 @media (max-width: 768px) {
     header h1 {
         font-size: 36px;
@@ -120,22 +58,9 @@ section p {
     header p {
         font-size: 16px;
     }
-    section {
-        padding: 20px;
-    }
-    section h2 {
-        font-size: 24px;
-    }
-    section p {
-        font-size: 16px;
-    }
-    body {
-        background-size: cover; /* keep full coverage */
-        background-position: center top;
-    }
 }
 
-/* Responsive: phones */
+/* Mobile */
 @media (max-width: 480px) {
     header h1 {
         font-size: 28px;
@@ -143,17 +68,46 @@ section p {
     header p {
         font-size: 14px;
     }
-    section {
-        padding: 15px;
+    .header-text {
+        padding: 15px 20px;
     }
-    section h2 {
-        font-size: 20px;
-    }
-    section p {
-        font-size: 15px;
-    }
-    .skills ul {
-        flex-direction: column;
-        gap: 10px;
-    }
+}
+
+/* ABOUT SECTION */
+.about {
+    padding: 50px 20px;
+}
+
+.about h2 {
+    margin-bottom: 15px;
+}
+
+.about p {
+    line-height: 1.5;
+}
+
+/* SKILLS SECTION */
+.skills {
+    padding: 50px 20px;
+}
+
+.skills ul {
+    list-style: disc inside;
+}
+
+/* CONTACT SECTION */
+.contact {
+    padding: 50px 20px;
+}
+
+.contact-icons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.icon svg {
+    width: 40px;
+    height: 40px;
+    fill: #fff;
 }
