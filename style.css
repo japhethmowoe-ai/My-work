@@ -111,3 +111,7 @@ header p {
     height: 40px;
     fill: #fff;
 }
+
+.icon {
+    cursor: pointer;
+}
