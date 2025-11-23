@@ -3,43 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> My Portfolio</title>
+    <meta name="description" content="Japheth Mowoe – Responsive Landing Page Designer, HTML & CSS Developer">
+    <title>Japheth Mowoe Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HERO SECTION (professional, responsive, natural height) -->
+    <!-- HERO SECTION -->
     <header class="hero">
-        <picture>
-            <!-- Mobile image -->
-            <source media="(max-width: 480px)" 
-                srcset="https://rare-gallery.com/uploads/posts/4552170-native-americans-men-warrior-native-american-clothing-nature-artwork-trees-animals-horse-feathers-arrows-bow-painting-rock-mountains-stream-sun-rays-birds.jpg">
-
-            <!-- Desktop image -->
-            <img src="https://rare-gallery.com/uploads/posts/4552170-native-americans-men-warrior-native-american-clothing-nature-artwork-trees-animals-horse-feathers-arrows-bow-painting-rock-mountains-stream-sun-rays-birds.jpg"
-                 alt="Native American Artwork"
-                 class="hero-img">
-        </picture>
-
-        <div class="header-text">
-            <h1>Japheth Mowoe</h1>
-            <p>Responsive Landing Page Designer</p>
-        </div>
+        <h1>Japheth Mowoe</h1>
+        <p>Responsive Landing Page Designer</p>
     </header>
 
     <!-- ABOUT SECTION -->
-    <section class="about">
-        <div class="text">
-            <h2>About Me</h2>
-            <p>
-                Hi there, I'm Japheth — a frontend developer and a passionate learner.
-                 I love to build and create, I build Responsive Landing Pages, clean, aesthetic, beautiful, thoughtful, cryptic, however which way you like it, life is a journey, contact me and take one with me.
-            </p>
-        </div>
+    <section class="about section-block">
+        <h2>About Me</h2>
+        <p>
+            Hi, I'm Japheth — a frontend developer and passionate learner. I love creating responsive, clean, and beautiful landing pages.
+        </p>
+        <p>
+            My designs are aesthetic, thoughtful, and fully functional. Let's build something amazing together!
+        </p>
     </section>
 
     <!-- SKILLS SECTION -->
-    <section class="skills">
+    <section class="skills section-block">
         <h2>Skills</h2>
         <ul>
             <li>HTML</li>
@@ -49,11 +37,10 @@
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="contact">
+    <section class="contact section-block">
         <h2>Contact</h2>
         <div class="contact-icons">
-
-            <a href="#" class="icon">
+            <a href="mailto:your-email@example.com" class="icon" title="Email">
                 <svg viewBox="0 0 24 24">
                     <path d="M22 6.5V19a2 2 0 0 1-2
                     2H4a2 2 0 0 1-2-2V6.5l10
@@ -62,7 +49,7 @@
                 </svg>
             </a>
 
-            <a href="#" class="icon">
+            <a href="https://www.linkedin.com/in/your-linkedin" class="icon" title="LinkedIn">
                 <svg viewBox="0 0 24 24">
                     <path d="M9.964 19 10 16.2l8.15-8.01-11.418
                     7.18-4.92-1.54c-.837-.255-.85-.83.188-1.23L19.56
@@ -72,7 +59,7 @@
                 </svg>
             </a>
 
-            <a href="#" class="icon">
+            <a href="https://github.com/your-github" class="icon" title="GitHub">
                 <svg viewBox="0 0 24 24">
                     <path d="M18.36 2H21l-6.56
                     7.5L22 22h-7.07l-4.8-6.93L4.64
@@ -82,7 +69,7 @@
                 </svg>
             </a>
 
-            <a href="#" class="icon">
+            <a href="https://twitter.com/your-twitter" class="icon" title="Twitter">
                 <svg viewBox="0 0 24 24">
                     <path d="M20.52 3.48A11.78 11.78 0 0 0 12 0C5.37
                     0 .07 5.29.07 11.93c0 2.1.55 4.15
@@ -96,7 +83,6 @@
                     5.19-4.22 9.41-9.4 9.41Z"/>
                 </svg>
             </a>
-
         </div>
     </section>
 
